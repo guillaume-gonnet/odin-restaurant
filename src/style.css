@@ -1,3 +1,5 @@
+@import "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css";
+
 body {
     font-family: Roboto, sans-serif;
     margin: auto;
@@ -62,4 +64,8 @@ img {
 .cocktailTitle,
 .cocktailIngredients {
     text-align: center;
+}
+
+#map {
+    height: 180px;
 }

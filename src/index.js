@@ -1,5 +1,8 @@
 import infoPageLoad from "./infoPageLoad.js"
 import menuPageLoad from "./menuPageLoad.js";
+import contactPageLoad from "./contactPageLoad.js";
+import 'leaflet/dist/leaflet.css';
+
 
 
 function load(page) {
@@ -16,6 +19,12 @@ function load(page) {
     navbarMenu.addEventListener('click', (e) => {
         e.preventDefault();
         load(menuPageLoad());
+    });
+
+    const navbarContact = document.getElementById("contact");
+    navbarContact.addEventListener('click', (e) => {
+        e.preventDefault();
+        load(contactPageLoad());
     });
 }
 
