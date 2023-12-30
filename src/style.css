@@ -30,6 +30,11 @@ li {
 }
 
 .subtitle {
+    text-align: center;
+    font-size: 2em;
+}
+
+.text {
     text-align: justify;
 }
 
@@ -38,4 +43,23 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+#cocktails {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.cocktail {
+    background-color: #04AA6D;
+    flex: 45%;
+    flex-grow: 0;
+    padding: 5px 5px;
+}
+
+.cocktailTitle,
+.cocktailIngredients {
+    text-align: center;
 }

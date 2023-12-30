@@ -13,10 +13,12 @@ export default function infoPageLoad() {
 
     const navbarMenu = document.createElement("li");
     navbarMenu.setAttribute("id", "menu");
+    navbarMenu.style.cursor = "pointer";
     navbarMenu.textContent = "Menu";
 
     const navbarContact = document.createElement("li");
     navbarContact.setAttribute("id", "contact");
+    navbarContact.style.cursor = "pointer";
     navbarContact.textContent = "Contact";
 
     navbar.appendChild(navbarInfo);
@@ -29,7 +31,7 @@ export default function infoPageLoad() {
     headerEl.textContent = "GG Cocktail Bar";
 
     const textEl = document.createElement("p");
-    textEl.classList.add("subtitle");
+    textEl.classList.add("text");
     textEl.textContent = "Welcome to GG Cocktail bar. The only bar in Columbus with original recipes. All our cocktails are made with fresh ingredients. We are preventing dilution by water/ice to conserve the most flavors! The bartender Guillaume says 'I decided to open this cocktail bar because I was disappointed in the cocktails I found in restaurants. Low in alcohol, too much ice, I wanted a place where people could drink tasty coktails! So I created this place! I hope you'll enjoy it!'";
 
     const imageEl = new Image();
